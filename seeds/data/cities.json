@@ -1,0 +1,7 @@
+[
+  { "id": "city_mumbai", "name": "Mumbai", "state": "Maharashtra" },
+  { "id": "city_delhi", "name": "Delhi", "state": "Delhi" },
+  { "id": "city_bengaluru", "name": "Bengaluru", "state": "Karnataka" },
+  { "id": "city_hyderabad", "name": "Hyderabad", "state": "Telangana" },
+  { "id": "city_pune", "name": "Pune", "state": "Maharashtra" }
+]

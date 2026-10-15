@@ -1,0 +1,61 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm install:*)",
+      "Bash(pnpm i:*)",
+      "Bash(pnpm add:*)",
+      "Bash(pnpm update:*)",
+      "Bash(pnpm run:*)",
+      "Bash(pnpm dev:*)",
+      "Bash(pnpm build:*)",
+      "Bash(pnpm test:*)",
+      "Bash(pnpm start:*)",
+      "Bash(pnpm lint:*)",
+      "Bash(pnpm typecheck:*)"
+    ],
+    "deny": [
+      "Bash(pnpm run seed:*)",
+      "Bash(pnpm seed:*)",
+      "Bash(gh:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git fetch:*)",
+      "Bash(git merge:*)",
+      "Bash(git rebase:*)",
+      "Bash(git reset:*)",
+      "Bash(git checkout:*)",
+      "Bash(git switch:*)",
+      "Bash(git restore:*)",
+      "Bash(git clean:*)",
+      "Bash(git stash:*)",
+      "Bash(git tag:*)",
+      "Bash(git rm:*)",
+      "Bash(git mv:*)",
+      "Bash(git clone:*)",
+      "Bash(git init:*)",
+      "Bash(git remote:*)",
+      "Bash(git config:*)",
+      "Bash(git cherry-pick:*)",
+      "Bash(git revert:*)",
+      "Bash(rm:*)",
+      "Bash(rmdir:*)",
+      "Bash(unlink:*)"
+    ],
+    "ask": ["Write", "Edit", "MultiEdit", "NotebookEdit"]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/guard.py\" || exit 2"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+[
+  { "id": "show_001", "cinemaId": "cinema_mumbai_1", "movieTitle": "The Last Monsoon", "language": "Hindi", "format": "2D", "startsAt": "2026-10-20T10:30:00+05:30", "price": 250 },
+  { "id": "show_002", "cinemaId": "cinema_mumbai_1", "movieTitle": "Skyline Heist", "language": "English", "format": "IMAX", "startsAt": "2026-10-20T18:30:00+05:30", "price": 520 },
+  { "id": "show_003", "cinemaId": "cinema_mumbai_2", "movieTitle": "Chai and Chaos", "language": "Hindi", "format": "2D", "startsAt": "2026-10-20T14:00:00+05:30", "price": 220 },
+  { "id": "show_004", "cinemaId": "cinema_delhi_1", "movieTitle": "The Last Monsoon", "language": "Hindi", "format": "3D", "startsAt": "2026-10-20T16:15:00+05:30", "price": 380 },
+  { "id": "show_005", "cinemaId": "cinema_delhi_1", "movieTitle": "Skyline Heist", "language": "English", "format": "2D", "startsAt": "2026-10-20T21:00:00+05:30", "price": 300 },
+  { "id": "show_006", "cinemaId": "cinema_delhi_2", "movieTitle": "Chai and Chaos", "language": "Hindi", "format": "2D", "startsAt": "2026-10-20T11:45:00+05:30", "price": 200 },
+  { "id": "show_007", "cinemaId": "cinema_bengaluru_1", "movieTitle": "Skyline Heist", "language": "English", "format": "IMAX", "startsAt": "2026-10-20T19:00:00+05:30", "price": 480 },
+  { "id": "show_008", "cinemaId": "cinema_bengaluru_1", "movieTitle": "The Last Monsoon", "language": "Kannada", "format": "2D", "startsAt": "2026-10-20T13:30:00+05:30", "price": 260 },
+  { "id": "show_009", "cinemaId": "cinema_bengaluru_2", "movieTitle": "Chai and Chaos", "language": "Hindi", "format": "2D", "startsAt": "2026-10-20T17:30:00+05:30", "price": 240 }
+]

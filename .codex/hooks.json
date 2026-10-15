@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .agents/hooks/guard.py || exit 2",
+            "statusMessage": "Guardrail check"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "book-my-show",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "preinstall": "node -e \"if (!/pnpm/.test(process.env.npm_config_user_agent ?? '')) { console.error('Use pnpm, not npm or yarn.'); process.exit(1); }\"",
+    "dev": "node --watch --env-file-if-exists=.env src/server.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node --env-file-if-exists=.env dist/server.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint",
+    "test": "NODE_ENV=test LOG_LEVEL=silent node --test \"test/**/*.test.ts\"",
+    "nginx:local": "mkdir -p nginx/temp && nginx -p . -c nginx/local.conf",
+    "seed":"node --env-file-if-exists=.env scripts/seed.ts"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.3.1",
+    "@fastify/helmet": "^13.1.2",
+    "@fastify/swagger": "^9.9.2",
+    "@fastify/swagger-ui": "^6.1.2",
+    "fastify": "^5.12.7",
+    "ioredis": "^6.0.0",
+    "mongodb": "^7.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "oxlint": "^1.88.0",
+    "pino-pretty": "^13.2.0",
+    "typescript": "^7.0.2"
+  }
+}

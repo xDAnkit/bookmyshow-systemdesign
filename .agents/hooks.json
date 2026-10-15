@@ -1,0 +1,13 @@
+{
+  "book-my-show-guard": {
+    "enabled": true,
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          { "type": "command", "command": "python3 .agents/hooks/guard.py || exit 2", "timeout": 10 }
+        ]
+      }
+    ]
+  }
+}

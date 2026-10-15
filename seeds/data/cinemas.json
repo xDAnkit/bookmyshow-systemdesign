@@ -1,0 +1,8 @@
+[
+  { "id": "cinema_mumbai_1", "cityId": "city_mumbai", "name": "Sunset Cinemas Andheri", "address": "Andheri West, Mumbai" },
+  { "id": "cinema_mumbai_2", "cityId": "city_mumbai", "name": "Marine Screen Dadar", "address": "Dadar East, Mumbai" },
+  { "id": "cinema_delhi_1", "cityId": "city_delhi", "name": "Capital Plex Saket", "address": "Saket, New Delhi" },
+  { "id": "cinema_delhi_2", "cityId": "city_delhi", "name": "Lotus Theatre Rohini", "address": "Rohini Sector 9, Delhi" },
+  { "id": "cinema_bengaluru_1", "cityId": "city_bengaluru", "name": "Garden City Screens", "address": "Indiranagar, Bengaluru" },
+  { "id": "cinema_bengaluru_2", "cityId": "city_bengaluru", "name": "Tech Park Multiplex", "address": "Whitefield, Bengaluru" }
+]

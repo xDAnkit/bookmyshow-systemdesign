@@ -1,0 +1,19 @@
+include:
+  - docker/mongo/compose.yml
+  - docker/redis/compose.yml
+
+services:
+  app:
+    build: .
+    profiles: ["app"]
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      HOST: 0.0.0.0
+      MONGODB_URI: mongodb://mongo:27017
+      REDIS_URL: redis://redis:6379
+    depends_on:
+      mongo:
+        condition: service_healthy
+      redis:
+        condition: service_healthy

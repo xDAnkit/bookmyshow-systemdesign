@@ -1,0 +1,6 @@
+# Ask before every action, and keep the sandbox closed. Hooks in hooks.json are the second layer.
+approval_policy = "untrusted"
+sandbox_mode = "workspace-write"
+
+[sandbox_workspace_write]
+network_access = false

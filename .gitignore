@@ -1,0 +1,11 @@
+node_modules
+dist
+.env
+logs
+*.log
+nginx/temp
+.DS_Store
+
+# Local consent switches, never commit
+.agents/APPROVED
+.agents/ALLOW_NET

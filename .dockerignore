@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.env
+logs
+test
+seeds
+scripts
+docker
+.agents
+.claude
+.cursor
+.codex
+*.md

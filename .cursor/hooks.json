@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      { "command": "python3 .agents/hooks/guard.py || exit 2", "matcher": "*", "failClosed": true }
+    ],
+    "beforeShellExecution": [
+      { "command": "python3 .agents/hooks/guard.py || exit 2", "failClosed": true }
+    ],
+    "beforeMCPExecution": [
+      { "command": "python3 .agents/hooks/guard.py || exit 2", "failClosed": true }
+    ],
+    "beforeReadFile": [
+      { "command": "python3 .agents/hooks/guard.py || exit 2", "failClosed": true }
+    ]
+  }
+}
